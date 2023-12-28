@@ -15,8 +15,15 @@
         <div class="mb-3">
             <label for="formGroupExampleInput2" class="form-label">Password </label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary" onclick="login()">Submit</button>
             <a href="./register.html">Register Here</a>
       </div>
 </body>
+<script>
+    function login(){
+        let name = document.getElementById("formGroupExampleInput2").value;
+        window.confirm(`Are you sure your email is ${name}`)
+
+    }
+</script>
 </html>
